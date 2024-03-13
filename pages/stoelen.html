@@ -1,0 +1,458 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stoelen</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="/assets/js/app.js" defer></script>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <!-- de hele topbar -->
+      <div class="topbar">
+        <div>
+          <label for="languages">Uw Taal</label>
+          <select name="languages" id="languages">
+            <option value="nederlands">Nederlands</option>
+            <option value="engels">Engels</option>
+          </select>
+        </div>
+        <div id="name">
+          <h1>DecorMasters.nl</h1>
+        </div>
+
+        <div class="accountContainer">
+          <a href="/pages/account/mijnaccount.html" class="accountBtn">Mijn Account</a>
+          <hr class="hr">
+          <a href="/pages/afrekenen.html" class="accountBtn">Afrekenen</a>
+          <hr class="hr">
+          <a href="/pages/inloggen.html" class="accountBtn">Inloggen</a>
+
+        </div>
+        <div class="log-in">
+          <a href="/pages/account/mijnaccount.html"><i class="fa fa-user" ></i></a>
+          <a href="/pages/afrekenen.html"><i class="fa fa-file-text"></i></a>
+          <a href="/pages/inloggen.html"><i class="fa fa-sign-in" ></i></a></div>
+    </div>
+      </div>
+
+      <div class="underbar">
+
+        <div class="logo">
+          <div class="hydralogo"><img src="/assets/img/Hydra.jpg" alt="Logo" width="60" height="60">
+          </div>
+        </div>
+
+        <div class="navigator">
+          <a href="/pages/home.html" class="home">Home</a>
+          <a href="/pages/muurdecoratie.html" class="muurdecoratie">Muurdecoratie</a>
+          <a href="/pages/doosjes.html" class="doosjes">Tafels</a>
+          <a href="/pages/opbergers.html" class="opbergers">Opbergers</a>
+          <a href="/pages/stoelen.html" class="stools">Stoelen</a>
+          <a href="/pages/banken.html" class="gadgets">Banken</a>
+        </div>
+
+        <div class="search-container">
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <script>
+            // ChatGPT Heeft dit verbeterd van kreeg hem niet aan het werken, ik weet 40% hoe dit werkt
+          document.getElementById('search-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            
+            var searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
+
+           
+            var products = document.querySelectorAll('.shopBox');
+            products.forEach(function (product) {
+              var productName = product.querySelector('.textShop a').textContent.toLowerCase();
+              if (productName.includes(searchQuery)) {
+                product.style.display = 'block'; 
+              } else {
+                product.style.display = 'none';
+              }
+            });
+          });
+
+        </script>
+
+      </div>
+
+
+
+
+
+
+
+    </header>
+    <!-- alle filters links -->
+    <aside id="aside">
+      <div class="filter1">
+
+        <div id="boxes1">
+          <h2>Doosjes</h2>
+          <hr class="hrAside">
+          <ul>
+            <li>Subcatergorie 1</li>
+            <li>Subcatergorie 2</li>
+            <li>Subcatergorie 3</li>
+          </ul>
+
+        </div>
+
+
+      </div>
+      <div class="filter1">
+        <div id="boxes2">
+          <h2>Uw Selectie verfijnen</h2>
+          <hr class="hrAside">
+          <h3>Materiaal:</h3>
+          <ul>
+
+            <li>Hout (14)</li>
+            <li>Plastiek (12)</li>
+            <li>Metaal(13)</li>
+            <li>Rubber(11)</li>
+          </ul>
+
+
+
+
+        </div>
+
+      </div>
+      <div class="filter1">
+        <div id="boxes3">
+          <h2>Prijs</h2>
+          <hr class="hrAside">
+          <div class="slidecontainer">
+            <input type="range" id="price-slider" min="0" max="100" value="50">
+            <p id="slider-value"></p>
+
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="filter1">
+        <div id="boxes4">
+          <h2>Recent bekeken</h2>
+          <hr class="hrAside">
+          <ul>
+            <li>(uw heeft nog niks bekeken)</li>
+          </ul>
+        </div>
+
+
+
+      </div>
+      <div class="filter1">
+        <div id="boxes5">
+          <h2>Nieuwsbrief</h2>
+          <hr class="hrAside">
+
+          <form id="form">
+            <input type="search" id="query" name="q" placeholder="Opzoeken">
+
+          </form>
+        </div>
+        <button class="glassy-button">Inschrijven</button>
+
+      </div>
+
+
+
+      <div class="filter6">
+        <div id="boxes6">
+          <h2>Producten Vergelijken</h2>
+          <hr class="hrAside">
+          <ul>
+            <li>(uw heeft nog niks geselecteerd) </li>
+          </ul>
+
+        </div>
+        <button class="glassy-button">Vergelijken</button>
+
+      </div>
+
+    </aside>
+    <nav>
+      <div class="topbarGrid">
+        <div class="nameArticle">Stoelen</div>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </nav>
+    <!-- alle producten -->
+    <div class="article">
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://www.sklum.com/nl/kopen-eetkamerstoelen/104326-stoel-met-armleuningen-in-lali-style-in-hout.html?id_c=207616&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdtFlWKTqsjZjWukErNvsv-lpamDVJWiz_HwcdmhsmbwQWbyTDvO5oaAobyEALw_wcB"><img
+              src="/assets/img/stoel1.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://www.sklum.com/nl/kopen-eetkamerstoelen/104326-stoel-met-armleuningen-in-lali-style-in-hout.html?id_c=207616&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdtFlWKTqsjZjWukErNvsv-lpamDVJWiz_HwcdmhsmbwQWbyTDvO5oaAobyEALw_wcB">Lali
+            Stoel</a></div>
+        <div class="prijs1">€ 200,00</div>
+        <div class="prijs2">€ 184,95</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://www.abkantoor.nl/varier-ekstrem.html?id=263104381&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxte4lFmwsjp12pSkgQHkOAsq6h33ljMj2WagLpwK-4lIEUVL-Ou-6SUaAshvEALw_wcB"><img
+              src="/assets/img/stoel2.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://www.abkantoor.nl/varier-ekstrem.html?id=263104381&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxte4lFmwsjp12pSkgQHkOAsq6h33ljMj2WagLpwK-4lIEUVL-Ou-6SUaAshvEALw_wcB">varier
+            Ekstrem</a></div>
+        <div class="prijs1">€ 1.734,71</div>
+        <div class="prijs2">€ 1.652,00</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://www.zitmaxx.nl/draaistoelen/fauteuil-estelle-domicil-exclusive-708783?utm_campaign=&utm_content=&utm_source=google&utm_medium=organic-shopping&utm_term=&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxtew1mm2bgyCAzzT16A5qCnOL1QsSpUJAiVz7LYKP60CClZoS310RgEaAoQQEALw_wcB"><img
+              src="/assets/img/stoel3.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://www.zitmaxx.nl/draaistoelen/fauteuil-estelle-domicil-exclusive-708783?utm_campaign=&utm_content=&utm_source=google&utm_medium=organic-shopping&utm_term=&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxtew1mm2bgyCAzzT16A5qCnOL1QsSpUJAiVz7LYKP60CClZoS310RgEaAoQQEALw_wcB">Fauteul
+            Estelle</a></div>
+        <div class="prijs1">€ 750,00</div>
+        <div class="prijs2">€ 649,00</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://www.goossenswonen.nl/p/goossens-eetkamerstoel-oliver-bruin-microvezel/24780/?utm_source=google&utm_medium=cpc&utm_campaign=nl_nl_do_sales_Shopping_G_Wonen_Stoelen&utm_adgroup=Eetkamerstoelen&utm_term=300165517&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcKJKDNofPeO-_ujnyENzMDP656E6J0WR4TdFdBB3BAQrFHP9tI_I4aArYaEALw_wcB"><img
+              src="/assets/img/stoel4.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://www.goossenswonen.nl/p/goossens-eetkamerstoel-oliver-bruin-microvezel/24780/?utm_source=google&utm_medium=cpc&utm_campaign=nl_nl_do_sales_Shopping_G_Wonen_Stoelen&utm_adgroup=Eetkamerstoelen&utm_term=300165517&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcKJKDNofPeO-_ujnyENzMDP656E6J0WR4TdFdBB3BAQrFHP9tI_I4aArYaEALw_wcB">Oliver
+            Goossens</a></div>
+        <div class="prijs1">€ 399,99</div>
+        <div class="prijs2">€ 309,00</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://furnicher.com/nl/cooper-dining-chair-yellow-velvet-black-legs?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=8977894662&hsa_cam=16641583864&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcqvwGjZa6MAt6IVS3gqZ7n0tqjsc9bolVD1HUsIHa63ndxpQUrvV4aAugREALw_wcB"><img
+              src="/assets/img/stoel5.jpg3.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://furnicher.com/nl/cooper-dining-chair-yellow-velvet-black-legs?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=8977894662&hsa_cam=16641583864&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcqvwGjZa6MAt6IVS3gqZ7n0tqjsc9bolVD1HUsIHa63ndxpQUrvV4aAugREALw_wcB">Cooper
+            Stoel</a></div>
+        <div class="prijs1">€ 149,99</div>
+        <div class="prijs2">€ 119,00</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://www.zitmaxx.nl/relaxstoelen/relaxstoel-volden-256516?utm_campaign=&utm_content=&utm_source=google&utm_medium=organic-shopping&utm_term=&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxtc8ergBYULQnfCv2BaaG7rSMfo6gz6_Wa43rpouXmr_0sYn40AYIp4aAn8mEALw_wcB"><img
+              src="/assets/img/stoel6.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://www.zitmaxx.nl/relaxstoelen/relaxstoel-volden-256516?utm_campaign=&utm_content=&utm_source=google&utm_medium=organic-shopping&utm_term=&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxtc8ergBYULQnfCv2BaaG7rSMfo6gz6_Wa43rpouXmr_0sYn40AYIp4aAn8mEALw_wcB">Relaxstoel
+            Volden</a></div>
+        <div class="prijs1">€ 1.600,00</div>
+        <div class="prijs2">€ 1.579,00</div>
+
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://furnicher.com/nl/vinny-eetkamerstoel-groen-velvet-met-zwart-onderstel?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=8977894662&hsa_cam=16641583864&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdPij_nU1w-tBdfaAKEyDiQOIIjy7D1fYJgYXwH56gFW9TcevyoYCMaAmHHEALw_wcB"><img
+              src="/assets/img/stoel7.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://furnicher.com/nl/vinny-eetkamerstoel-groen-velvet-met-zwart-onderstel?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=8977894662&hsa_cam=16641583864&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtdPij_nU1w-tBdfaAKEyDiQOIIjy7D1fYJgYXwH56gFW9TcevyoYCMaAmHHEALw_wcB">Vinny
+            Velvet</a></div>
+        <div class="prijs1">€ 129,00</div>
+        <div class="prijs2">€ 109,00</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="
+          https://furnicher.com/nl/bone-chair-eetkamerstoel-cognac-hout?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=8977894662&hsa_cam=16641583864&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcaRviQZeZ-PzqSOyBoigtKPZJqf3r9iQN-yrdVKVOMsieo9sFFu5MaArBpEALw_wcB"><img
+              src="/assets/img/stoel8.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://furnicher.com/nl/bone-chair-eetkamerstoel-cognac-hout?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=8977894662&hsa_cam=16641583864&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcaRviQZeZ-PzqSOyBoigtKPZJqf3r9iQN-yrdVKVOMsieo9sFFu5MaArBpEALw_wcB">Bone
+            Cognac</a></div>
+        <div class="prijs1">€ 239,00</div>
+        <div class="prijs2">€ 179,00</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+      <div class="shopBox">
+        <div class="square">
+          <a
+            href="https://sofacompany.com/nl-nl/design-fauteuil/babette-armchairs-moss-rust-swivel-236301250332?gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxteX-G425TnAJV60Hcgtb5zTxS-VhX6B25dqW2ktMygj_I5ucPs-fN0aAvIQEALw_wcB"><img
+              src="/assets/img/stoel9.jpg" alt="doos" width="320" height="220"></a>
+        </div>
+        <div class="textShop"><a
+            href="https://sofacompany.com/nl-nl/design-fauteuil/babette-armchairs-moss-rust-swivel-236301250332?gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxteX-G425TnAJV60Hcgtb5zTxS-VhX6B25dqW2ktMygj_I5ucPs-fN0aAvIQEALw_wcB">Babette</a>
+        </div>
+        <div class="prijs1">€ 699,00</div>
+        <div class="prijs2">€ 599,00</div>
+        <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
+      </div>
+
+
+
+
+
+
+
+    </div>
+    <!-- de hele footer -->
+    <footer class="footer">
+      <div class="text1">
+        <h2>VEILIG BETALEN</h2>
+        <hr>
+        <p>Betaal in alle veiligheid</p>
+        <div>met oznze partners</div>
+
+      </div>
+      <div class="text2">
+        <h2>LEVERINGKOSTEN</h2>
+        <hr>
+        <p>Transport tarieven</p>
+
+
+      </div>
+      <div class="text3">
+        <h2>KLANTENSERVICE</h2>
+        <hr>
+        <p>Wachtwoord vergeten</p>
+        <p>Veilge betaling</p>
+        <p>Levering</p>
+        <p>Annuleren, retouren en ruilen</p>
+
+
+      </div>
+      <div class="text4">
+        <h2>OVER ONS</h2>
+        <hr>
+        <p>Over ons</p>
+        <p> Contactinformatie</p>
+        <p>Algemene voorwaarden</p>
+        <p>Privacy beleid</p>
+
+
+      </div>
+      <div class="copyright">
+        <a href="/pages/copyright.html" style="text-decoration: none; color: white;">
+          <h4>© 1999-2024 DecorMasters.nl b.v.</h4>
+        </a>
+      </div>
+
+
+
+
+    </footer>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function () {
+        output.innerHTML = this.value;
+      }
+      //de slider om je prijs te kiezen, heb zelf proberen om te zoeken maar lukte niet echt. heb hier ook ChatGPT voor gebruikt en weet niet echt hoe het werkt
+    </script>
+    <script>
+      var slider = document.getElementById('price-slider');
+      var products = document.querySelectorAll('.shopBox');
+
+      var prices = Array.from(products).map(function (product) {
+        return parseFloat(product.querySelector('.prijs2').textContent.replace('€ ', '').replace('.', '').replace(',', '.'));
+      });
+
+      var minPrice = Math.min(...prices); 
+      var maxPrice = 1700;
+
+      slider.min = minPrice;
+      slider.max = maxPrice;
+
+      var selectedPrice = maxPrice;
+
+      slider.value = selectedPrice;
+
+      slider.addEventListener('input', function () {
+        var selectedPrice = parseFloat(slider.value);
+        products.forEach(function (product) {
+          var price = parseFloat(product.querySelector('.prijs2').textContent.replace('€ ', '').replace('.', '').replace(',', '.'));
+          if (price > selectedPrice) {
+            product.style.display = 'none';
+          } else {
+            product.style.display = 'block';
+          }
+        });
+        document.getElementById('slider-value').textContent = '€' + selectedPrice.toLocaleString('nl-NL', { minimumFractionDigits: 2 });
+      });
+
+      slider.dispatchEvent(new Event('input'));
+    </script>
+  </main>
+  <div class="background-image"></div>
+  <div class="content">
+
+  </div>
+</body>
+
+</html>

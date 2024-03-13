@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainblock{
+    width: 1500px;
+    height: 2150px;
+    background-color: white;
+    margin-top: 40px;
+    box-shadow: 5px 2px 20px 3px #888888;
+    
+}
+.title{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+  
+    background-color: #005866;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+  }
+  
+  .accountContainer {
+    display: flex;
+    gap: 10px;
+  
+  }
+  
+  .accountBtn {
+    background-color: #005866;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 4px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  
+  }
+  .footer{
+    background-color: #005866;
+  height: 250px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  
+  
+  }
+  .text1{
+  color: white;
+  font-size: 20px;
+  margin-left: 90px;
+  margin-top: 50px;
+  
+  }
+  .text2{
+    color: white;
+  font-size: 20px;
+  
+  margin-top: 50px;
+  }
+  .text3{
+    color: white;
+    font-size: 20px;
+    
+    margin-top: 50px;
+  }
+  .text4{
+    color: white;
+    font-size: 20px;
+  margin-right: 90px;
+    margin-top: 50px;
+  }
+  .copyright{
+    position: absolute; 
+    margin-top: 230px;
+    margin-left: 40%;
+    color: white;
+  }
+  #hr {
+    border: 1px solid;
+  
+  
+  }
+  
+  .underbar {
+    background-color: rgb(0, 61, 131);
+    border-bottom: solid;
+    border-color: rgb(255, 60, 0);
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .navigator {
+    /* lol */
+  }
+  
+  .logo {
+    margin: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  .stools,
+  .gadgets,
+  .opbergers,
+  .doosjes,
+  .muurdecoratie,
+  .home {
+    background-color: rgb(0, 61, 131);
+    color: white;
+    padding: 15px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 40px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  
+  }
+  
+  .home:hover,
+  .gadgets:hover,
+  .opbergers:hover,
+  .muurdecoratie:hover,
+  .stools:hover,
+  .doosjes:hover {
+    font-size: 18px;
+  }
+  
+  .searchBtn {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: rgb(0, 61, 131);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(0, 61, 131);
+    transition: transform 0.3s ease;
+    margin: 12px 15px;
+  
+  }
+  
+  #shoppingcart {
+    margin-right: 15px;
+  }
+  
+  .searchBtn:hover {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px #b13500;
+  }
+  
+  #name {
+    margin: -9px;
+    padding-left: 110px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ffffff, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
+    font-size: 30px;
+  
+  }
+
+h3{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+h4{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: rgb(255, 60, 0);
+}
+#radselect{
+
+    margin-left: 300px;
+    margin-top: 30px;
+   
+}
+#radselect1{
+
+    margin-left: 300px;
+    margin-top: 25px;
+}
+.log-in{
+  display: none;
+}
+#TyBe{
+    color: black;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#aanhef{
+    color: black;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+#naam{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.textbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  }
+.block1{
+width: 300px;
+}
+.block2{
+  width: 600px;
+  }
+  #fname{
+    margin-right: 20px;
+    width: 180px;
+    height: 30px;
+  }
+  #bname{
+    margin-right: 20px;
+    width: 120px;
+    height: 30px; 
+  }
+  #lname{
+    width: 180px;
+    height: 30px;
+  }
+  .flexhuisNbm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+#post{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+#postcode1{
+  margin-left: 316px;
+  width: 180px;
+  height: 30px;
+}
+
+
+#huisnbm{
+  color: black;
+
+  margin-left: 200px;
+  
+}
+#huisnummer1{
+  width: 180px;
+  height: 20px;
+  margin-left: 10px;
+}
+.block3{
+ width: 305px; 
+}
+.block4{
+ width: 800px;
+}
+#h4land{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.dropdown{
+  margin-left: 317px;
+  max-height: 30px;
+
+}
+#landen{
+  width: 300px;
+  font-size: 15px;
+}
+.land{
+  max-height: 60px;
+}
+#aflever{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+#radselect4{
+  margin-left: 300px;
+  margin-top: 20px;
+}
+.email{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#emailadres{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+
+}
+#email{
+  margin-top: 80px;
+  width: 290px;
+  height: 30px;
+
+}
+.block6{
+  width: 830px;
+}
+.telefoonnummer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#telefoon{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+#telefoonN{
+  margin-top: 120px;
+margin-right: 840px;
+  width: 300px;
+  height: 30px;
+
+  
+}
+.geboortedatum{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#geboorte{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+
+}
+#geboortenD{
+  margin-top: 120px;
+margin-right: 840px;
+  width: 300px;
+  height: 30px;
+
+  
+}
+.bewaarG{
+  font-size: 30px;
+  color: rgb(255, 60, 0);
+}
+.gegevensBewaren{
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.wachtwoord{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#wachtwoordT{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+#pwd{
+  margin-top: 120px;
+  margin-right: 840px;
+    width: 300px;
+    height: 30px;
+}
+.wachtwoordB{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#wachtwoordT2{
+  color: black;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+#pwd1{
+  margin-top: 120px;
+  margin-right: 980px;
+    width: 300px;
+    height: 30px;
+}
+.buttonSend {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(0, 61, 131);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 5px 0px #ff5900;
+  transition: transform 0.3s ease;
+  margin-top: 100px;
+  font-size: 70px;
+  width: 900px;
+  height: 100px;
+  border-radius: 80px;
+  margin-left: 300px;
+}
+
+.buttonSend:hover {
+  transform: translateY(3px);
+  box-shadow: 0px 2px 0px #ff5c10;
+}
+.buttonSend:active {
+  transform: translateY(10px); /* Move down by 6px when clicked */
+  box-shadow: none; /* Remove box shadow when clicked */
+}
+
+
+
+
+
+
+
+
+
+
+  
