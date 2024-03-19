@@ -25,12 +25,12 @@
         <div class="prodInfo">
             <div class="title"><?php echo $product["name"];?></div>
             <div class="little-img-flex">
-                <div class="little-img"></div>
-                <div class="little-img"></div>
-                <div class="little-img"></div>
+                <div class="little-img"><img class="image" src="<?php echo $product["litImg"];?>" alt=""></div>
+                <div class="little-img"><img class="image" src="<?php echo $product["litImg2"];?>" alt=""></div>
+                <div class="little-img"><img class="image" src="<?php echo $product["litImg3"];?>" alt=""></div>
             </div>
             <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, saepe obcaecati. Laudantium, ullam autem vero ea velit optio. Animi ipsa repellat assumenda, est labore sunt ratione deserunt. Reprehenderit, sequi molestiae?
+            <?php echo $product["text"];?>
             </div>
             <div class="price"><?php echo $product["originalPrice"];?></div>
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
