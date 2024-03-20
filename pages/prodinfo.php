@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
-    <link rel="stylesheet" href="../assets/css/info.css">
+    <link rel="stylesheet" href="../assets/css/info.css">   
 </head>
 <body>
    <?php 
@@ -34,7 +34,7 @@
             </div>
             <div class="price"><?php echo $product["originalPrice"];?></div>
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
-            <button class="button">Order</button>
+            <button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button>
         </div>
 
 </div>
