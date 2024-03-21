@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
-    <link rel="stylesheet" href="../assets/css/info.css">   
+    <link rel="stylesheet" href="./assets/css/info.css">   
 </head>
 <body>
    <?php 
-   include_once("../config.php");
-   include_once("../assets/core/header.php");
+   include_once("./config.php");
+   include_once("./assets/core/header.php");
 
    $product = [];
    foreach ($config["products"] as $curr_product) {
@@ -39,7 +39,7 @@
 
 </div>
 <?php 
-    include_once("../assets/core/footer.php");
+    include_once("./assets/core/footer.php");
 ?>
 
 </body>

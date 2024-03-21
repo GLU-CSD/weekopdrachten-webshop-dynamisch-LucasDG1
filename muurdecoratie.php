@@ -1,9 +1,9 @@
 <?php 
-include_once("../assets/core/header1.php") 
+include_once("./assets/core/header.php") 
 
 ?>
 <?php
-include_once("../assets/core/filters.php")
+include_once("./assets/core/filters.php")
 ?>
   <nav>
     <div class="topbarGrid">
@@ -29,7 +29,7 @@ include_once("../assets/core/filters.php")
       <div class="square">
         <a
           href="https://kioskfr-production.blokker.nl/clayre-en-eef-wanddecoratie-30x75-cm-rood-wit-ijzer-telephone-muurdecoratie-rood-muurdecoratie/3967310.html"><img
-            src="../assets/img/muurdec9.jpg" alt="doos" width="320" height="220"> </a>
+            src="./assets/img/muurdec9.jpg" alt="doos" width="320" height="220"> </a>
       </div>
       <div class="textShop"><a
           href="https://kioskfr-production.blokker.nl/clayre-en-eef-wanddecoratie-30x75-cm-rood-wit-ijzer-telephone-muurdecoratie-rood-muurdecoratie/3967310.html">London
@@ -41,7 +41,7 @@ include_once("../assets/core/filters.php")
 
     <div class="shopBox">
       <div class="square">
-        <a href="https://www.floz.nl/product/wanddecoratie-metaal-paarden/"><img src="../assets/img/muurdec8.jpg"
+        <a href="https://www.floz.nl/product/wanddecoratie-metaal-paarden/"><img src="./assets/img/muurdec8.jpg"
             alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a href="https://www.floz.nl/product/wanddecoratie-metaal-paarden/">Shining Horses</a></div>
@@ -53,7 +53,7 @@ include_once("../assets/core/filters.php")
     <div class="shopBox">
       <div class="square">
         <a href="https://www.wall-art.nl/Wanddecoraties/Hout/Hexagon-Hout-Palmblad-voor-roze-muur-Boehmer.html"><img
-            src="../assets/img/muurdec7.jpg" alt="doos" width="320" height="220"></a>
+            src="./assets/img/muurdec7.jpg" alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a
           href="https://www.wall-art.nl/Wanddecoraties/Hout/Hexagon-Hout-Palmblad-voor-roze-muur-Boehmer.html">Hexa
@@ -66,7 +66,7 @@ include_once("../assets/core/filters.php")
     <div class="shopBox">
       <div class="square">
         <a href="https://www.amazon.nl/Metalen-Wanddecoratie-Moderne-Opknoping-Driedimensionale/dp/B0C5MYJMKP"><img
-            src="../assets/img/muurdec6.jpg" alt="doos" width="320" height="220"></a>
+            src="./assets/img/muurdec6.jpg" alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a
           href="https://www.amazon.nl/Metalen-Wanddecoratie-Moderne-Opknoping-Driedimensionale/dp/B0C5MYJMKP">Gears</a>
@@ -79,7 +79,7 @@ include_once("../assets/core/filters.php")
     <div class="shopBox">
       <div class="square">
         <a href="https://www.ilovespeelgoed.nl/product/byon-muurdecoratie-ballon-wit-17-cm.html"><img
-            src="../assets/img/muurdec5.jpg" alt="doos" width="320" height="220"></a>
+            src="./assets/img/muurdec5.jpg" alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a
           href="https://www.ilovespeelgoed.nl/product/byon-muurdecoratie-ballon-wit-17-cm.html">Matt Baloon</a></div>
@@ -91,7 +91,7 @@ include_once("../assets/core/filters.php")
     <div class="shopBox">
       <div class="square">
         <a href="https://www.amazon.nl/Johns-Studio-muurdecoratie-sculptuur-slaapkamer/dp/B0932B96S3"><img
-            src="../assets/img/muurdec4_.jpg" alt="doos" width="320" height="220"></a>
+            src="./assets/img/muurdec4_.jpg" alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a
           href="https://www.amazon.nl/Johns-Studio-muurdecoratie-sculptuur-slaapkamer/dp/B0932B96S3">Humming Bird</a>
@@ -106,7 +106,7 @@ include_once("../assets/core/filters.php")
       <div class="square">
         <a
           href="https://clayre-eef.com/nl/muurdecoratie/1892-5y0784-wanddecoratie-124x6x51-cm-goudkleurig-metaal-vlinder-rechthoek-muurdecoratie-8717459763722.html"><img
-            src="../assets/img/muurdec3.jpg" alt="doos" width="320" height="220"></a>
+            src="./assets/img/muurdec3.jpg" alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a
           href="https://clayre-eef.com/nl/muurdecoratie/1892-5y0784-wanddecoratie-124x6x51-cm-goudkleurig-metaal-vlinder-rechthoek-muurdecoratie-8717459763722.html">G-S
@@ -120,7 +120,7 @@ include_once("../assets/core/filters.php")
       <div class="square">
         <a
           href="https://clayre-eef.com/nl/muurdecoratie/20795-6y5465-wanddecoratie-vleugels-43x1x55-cm-goudkleurig-ijzer-muurdecoratie-8717459952195.html"><img
-            src="../assets/img/muurdec2.jpg" alt="doos" width="320" height="220"></a>
+            src="./assets/img/muurdec2.jpg" alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a
           href="https://clayre-eef.com/nl/muurdecoratie/20795-6y5465-wanddecoratie-vleugels-43x1x55-cm-goudkleurig-ijzer-muurdecoratie-8717459952195.html">Golden
@@ -133,7 +133,7 @@ include_once("../assets/core/filters.php")
     <div class="shopBox">
       <div class="square">
         <a href="https://www.bazaaronline.nl/spiegel-creston-muur-decoratie-3-set-goud.html"><img
-            src="../assets/img/muurdec1.png" alt="doos" width="320" height="220"></a>
+            src="./assets/img/muurdec1.png" alt="doos" width="320" height="220"></a>
       </div>
       <div class="textShop"><a href="https://www.bazaaronline.nl/spiegel-creston-muur-decoratie-3-set-goud.html">Triple
           Diamond</a></div>
@@ -150,8 +150,8 @@ include_once("../assets/core/filters.php")
 
   </div>
   <!-- de hele footer -->
-  <?php include_once("../assets/core/footer.php");
-  include_once("../assets/core/script.php");?>
+  <?php include_once("./assets/core/footer.php");
+  include_once("./assets/core/script.php");?>
  
   <div class="background-image"></div>
   <div class="content">

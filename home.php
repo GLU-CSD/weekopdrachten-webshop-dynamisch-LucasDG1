@@ -29,7 +29,7 @@
 <body>
 
   <main>
-    <?php include_once("../assets/core/header.php") ?>
+    <?php include_once("./assets/core/header.php") ?>
     <article>
       <!-- de homepage tekst -->
       <div class="textleft">
@@ -107,7 +107,7 @@
 
 <!-- de hele footer -->
 
-<?php include_once("../assets/core/footer.php");?>
+<?php include_once("./assets/core/footer.php");?>
 
   </main>
   <script>

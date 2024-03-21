@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Banken</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -55,15 +55,15 @@
 
       <div class="underbar">
         <div class="logo">
-          <div class="hydralogo"><img src="../assets/img/Hydra.jpg" alt="Logo" width="60" height="60"></div>
+          <div class="hydralogo"><img src="./assets/img/Hydra.jpg" alt="Logo" width="60" height="60"></div>
         </div>
         <div class="navigator">
-          <a href="../pages/home.php" class="home">Home</a>
-          <a href="../pages/muurdecoratie.php" class="muurdecoratie">Muurdecoratie</a>
-          <a href="../pages/doosjes.php" class="doosjes">Tafels</a>
-          <a href="../pages/opbergers.php" class="opbergers">Opbergers</a>
-          <a href="../pages/stoelen.php" class="stools">Stoelen</a>
-          <a href="../pages/banken.php" class="gadgets">Banken</a>
+          <a href="./home.php" class="home">Home</a>
+          <a href="./muurdecoratie.php" class="muurdecoratie">Muurdecoratie</a>
+          <a href="./doosjes.php" class="doosjes">Tafels</a>
+          <a href="./opbergers.php" class="opbergers">Opbergers</a>
+          <a href="./stoelen.php" class="stools">Stoelen</a>
+          <a href="./banken.php" class="gadgets">Banken</a>
         </div>
         <div class="search-container">
           <form id="search-form">

@@ -1,8 +1,8 @@
 <?php 
-include_once("../config.php");
+include_once("./config.php");
 
-include_once("../assets/core/header.php");
-include_once("../assets/core/filters.php");
+include_once("./assets/core/header.php");
+include_once("./assets/core/filters.php");
 ?>
         <nav>
             <div class="topbarGrid">
@@ -14,7 +14,7 @@ include_once("../assets/core/filters.php");
             <?php 
 
             foreach ($config["products"] as $product) {
-                include("../assets/core/product.php");
+                include("./assets/core/product.php");
             }
             ?>  
         
@@ -22,8 +22,8 @@ include_once("../assets/core/filters.php");
 
         <!-- de footer -->
         <?php 
-            include_once("../assets/core/footer.php");
-            include_once("../assets/core/script.php");
+            include_once("./assets/core/footer.php");
+            include_once("./assets/core/script.php");
         ?>
         <!-- de slider om je prijs te kiezen, heb zelf proberen om te zoeken maar lukte niet echt. heb hier ook ChatGPT voor gebruikt en weet niet echt hoe het werkt-->
     
