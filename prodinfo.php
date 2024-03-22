@@ -21,13 +21,13 @@
    ?>
    <div class="main">
 
-        <div class="imagebox"><img class="image" src="<?php echo $product["image"];?>" alt=""></div>
+        <div class="imagebox"><img class="image" id="boxImg"src="<?php echo $product["image"];?>" alt=""></div>
         <div class="prodInfo">
             <div class="title"><?php echo $product["name"];?></div>
             <div class="little-img-flex">
-                <div class="little-img"><img class="image" src="<?php echo $product["litImg"];?>" alt=""></div>
-                <div class="little-img"><img class="image" src="<?php echo $product["litImg2"];?>" alt=""></div>
-                <div class="little-img"><img class="image" src="<?php echo $product["litImg3"];?>" alt=""></div>
+                <div class="little-img"><img onclick="document.getElementById('boxImg').src=this.src"class="image" src="<?php echo $product["litImg"];?>" alt=""></div>
+                <div class="little-img"><img onclick="document.getElementById('boxImg').src=this.src"class="image" src="<?php echo $product["litImg2"];?>" alt=""></div>
+                <div class="little-img"><img onclick="document.getElementById('boxImg').src=this.src"class="image" src="<?php echo $product["litImg3"];?>" alt=""></div>
             </div>
             <div class="text">
             <?php echo $product["text"];?>
@@ -38,7 +38,9 @@
         </div>
 
 </div>
+
 <?php 
+
     include_once("./assets/core/footer.php");
 ?>
 

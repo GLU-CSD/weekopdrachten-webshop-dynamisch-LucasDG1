@@ -8,15 +8,65 @@ body{
 }
 
 .winkelwagen{
-    width: 500px;
-    height: 800px;
-    background-color: grey;
+    width: 700px;
+    height: 250px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 17px;
+    margin-left: 200px;
+    margin-top: 150px;
+    margin-bottom: 400px;
+    border: solid;
+    border-color: rgb(62, 57, 55);
+
+    
 }
+.winkel-box{
+    width: 420px;
+    height: 150px;
+    margin-right: 60px;
+    margin-top: 40px;
+    
+}
+.img{
+    width: 120px;
+    height: 130px;
+    margin-left: 30px;
+    margin-top: 23px;
+    background-color: black;
+}
+.title{
+    font-size: 25px;
+}
+.price{
+    font-size: 25px;
+    margin-top: 7px;
+}
+.disPrice{
+    font-size: 25px;
+    margin-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .info{
-    width: 500px;
-    height: 800px;
-    background-color: grey;
+    width: 600px;
+    height: 700px;
+    background-color: rgb(224, 224, 224);
     margin-right: 220px;
     margin-top: 120px;
+    
 }
 
