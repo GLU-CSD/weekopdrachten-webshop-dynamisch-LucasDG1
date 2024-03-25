@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -31,87 +32,63 @@
   <main>
     <?php include_once("./assets/core/header.php") ?>
     <article>
-      <!-- de homepage tekst -->
+      <!-- Homepage text -->
       <div class="textleft">
         <div class="maintext">
-<div class="headtextflex">
-  <div class="block"></div>
-          <div class="headtext">
-            <h4>Welkom bij DecorMasters.nl!</h4>
-          </div>
-
-          <div class="block1"></div>
-        </div>
-        <aside>
-          <!-- de fotos rechts -->
-          <div class="pictureboxflex">
-            <div class="block3"></div>
-          <div class="picturebox">
-            <div class="w3-content w3-section" style="max-width:500px">
-              <div class="asideBox">
-                <img class="mySlides w3-animate-left" src="../assets/img/room1.jpg" style="width:100%" alt=".">
-                <img class="mySlides w3-animate-left" src="../assets/img/room2.jpg" style="width:100%" alt=".">
-                <img class="mySlides w3-animate-left" src="../assets/img/room3.jpg" style="width:100%" alt=".">
-                <img class="mySlides w3-animate-left" src="../assets/img/room4.jpg" style="width:100%" alt=".">
-                <img class="mySlides w3-animate-left" src="../assets/img/room5.jpg" style="width:100%" alt=".">
-    
-    
-              </div>
-    
-    
+          <div class="headtextflex">
+            <div class="block"></div>
+            <div class="headtext">
+              <h4>Welcome to DecorMasters.nl!</h4>
             </div>
-    
+            <div class="block1"></div>
           </div>
-          <div class="block4"></div>
+          <aside>
+            <!-- Photos on the right -->
+            <div class="pictureboxflex">
+              <div class="block3"></div>
+              <div class="picturebox">
+                <div class="w3-content w3-section" style="max-width:500px">
+                  <div class="asideBox">
+                    <img class="mySlides w3-animate-left" src="./assets/img/room1.jpg" style="width:100%" alt=".">
+                    <img class="mySlides w3-animate-left" src="./assets/img/room2.jpg" style="width:100%" alt=".">
+                    <img class="mySlides w3-animate-left" src="./assets/img/room3.jpg" style="width:100%" alt=".">
+                    <img class="mySlides w3-animate-left" src="./assets/img/room4.jpg" style="width:100%" alt=".">
+                    <img class="mySlides w3-animate-left" src="./assets/img/room5.jpg" style="width:100%" alt=".">
+                  </div>
+                </div>
+              </div>
+              <div class="block4"></div>
+            </div>
+          </aside>
         </div>
-        </aside>
-
-
-
-
-
-
-
-        </div>
-
-
       </div>
 
       <div class="textbox1">
         <div class="undertext1">
-          <h4>Breng de schoonheid van creativiteit in huis met onze prachtige selectie decoratieve stukken.</h4>
+          <h4>Bring the beauty of creativity into your home with our stunning selection of decorative pieces.</h4>
         </div>
       </div>
       <div class="textbox2">
         <div class="undertext2">
-          <h4>Ontdek onze zorgvuldig samengestelde collectie van handgemaakte en design items, elk gekozen om een
-            vleugje persoonlijkheid en verfijning toe te voegen aan uw interieur.</h4>
+          <h4>Discover our carefully curated collection of handmade and designer items, each chosen to add a touch of personality and sophistication to your interiors.</h4>
         </div>
       </div>
       <div class="textbox3">
         <div class="undertext3">
-          <h4>Bij DecorMasters.nl geloven we in de kracht van schoonheid en inspiratie. Daarom streven we ernaar om
-            u een moeiteloze en plezierige winkelervaring te bieden, met snelle verzending, veilige betalingsopties
-            en uitstekende klantenservice.</h4>
+          <h4>At DecorMasters.nl, we believe in the power of beauty and inspiration. That's why we strive to provide you with a seamless and enjoyable shopping experience, with fast shipping, secure payment options, and excellent customer service.</h4>
         </div>
       </div>
-
-
     </article>
 
     <div class="background-image"></div>
-    <div class="content">
+    <div class="content"></div>
 
-    </div>
-
-
-<!-- de hele footer -->
-
-<?php include_once("./assets/core/footer.php");?>
+    <!-- The entire footer -->
+    <?php include_once("./assets/core/footer.php");?>
 
   </main>
   <script>
-    //de fotos die elken 3,5 seconden veranderen
+    // Change photos every 3.5 seconds
     var myIndex = 0;
     carousel();
 
@@ -125,7 +102,6 @@
       if (myIndex > x.length) { myIndex = 1 }
       x[myIndex - 1].style.display = "block";
       setTimeout(carousel, 3500);
-
     }
   </script>
 </body>

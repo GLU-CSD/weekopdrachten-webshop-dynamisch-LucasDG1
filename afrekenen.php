@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Afrekenen</title>
-  <link rel="stylesheet" href="/eindopdrachten-webshop-overzicht-bestelformulier-LucasDG1/assets/css/afrekenen.css">
+  <link rel="stylesheet" href="./assets/css/afrekenen.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -60,12 +60,12 @@
       </div>
       <!-- de btns onder de topbar -->
       <div class="navigator">
-        <a href="/pages/home.html" class="home">Home</a>
-        <a href="/pages/muurdecoratie.html" class="muurdecoratie">Muurdecoratie</a>
-        <a href="/pages/doosjes.html" class="doosjes">Tafels</a>
-        <a href="/pages/opbergers.html" class="opbergers">Opbergers</a>
-        <a href="/pages/stoelen.html" class="stools">Stoelen</a>
-        <a href="/pages/banken.html" class="gadgets">Banken</a>
+      <a href="./home.php" class="home">Home</a>
+          <a href="./muurdecoratie.php" class="muurdecoratie">Wall Decoration</a>
+          <a href="./doosjes.php" class="doosjes">Tabels</a>
+          <a href="./opbergers.php" class="opbergers">Closet</a>
+          <a href="./stoelen.php" class="stools">Chair</a>
+          <a href="./banken.php" class="gadgets">Couches</a>
       </div>
 
       <div class="opzoeken">
@@ -82,56 +82,56 @@
 
 
   </header>
+  
   <main>
 
     <div class="content">
       <div class="block"></div>
       <div class="mainblock">
-        <div class="title">BestelFormulier</div>
-        <h3>JE GEGEVENS</h3>
-        <h4>Wat moet er op het factuur komen te staan?</h4>
-        <h4 id="TyBe">Type bestelling:</h4>
+        <div class="title">Order</div>
+        <h3>Your info</h3>
+        <h4></h4>
+        <h4 id="TyBe">Type of Order:</h4>
         <form name="myForm" action="/assest/pages/home.html" onsubmit="return validateForm()" method="post" required>
         <div>
           <input type="radio" id="radselect" name="drone" value="particulier" checked /><label
-            for="radselect">Particulier</label>
+            for="radselect">Private</label>
 
         </div>
         <div>
           <input type="radio" id="radselect1" name="drone" value="Zakelijk" checked /><label
-            for="radselect1">Zakelijk</label>
+            for="radselect1">Buisness</label>
 
         </div>
 
-        <h4 id="aanhef">Aanhef</h4>
+        <h4 id="aanhef">Gender</h4>
         <div>
           <input type="radio" id="radselect" name="drone1" value="particulier" checked /><label
-            for="radselect">Dhr.</label>
+            for="radselect">MR.</label>
 
         </div>
         <div>
           <input type="radio" id="radselect1" name="drone1" value="Zakelijk" checked /><label
-            for="radselect1">Mevr.</label>
+            for="radselect1">Ms.</label>
 
         </div>
         <div>
           <input type="radio" id="radselect1" name="drone1" value="Anders" checked /><label
-            for="radselect1">Anders</label>
+            for="radselect1">Other</label>
 
         </div>
         <div>
-          <input type="radio" id="radselect1" name="drone1" value="zegikniet" checked /><label for="radselect1">Zeg ik
-            liever niet.</label>
+          <input type="radio" id="radselect1" name="drone1" value="zegikniet" checked /><label for="radselect1">Rather dont say.</label>
 
         </div>
         <div class="name">
-          <h4 id="naam">Naam</h4>
+          <h4 id="naam">Name</h4>
           <div class="textbox">
             <div class="block1"></div>
             <label id="fnamebox" for="fname"></label>
-            <input type="text" id="fname" placeholder="Voornaam" name="fname"><br><br>
-            <input type="text" id="bname" placeholder="Tussenv." name="bname"><br><br>
-            <input type="text" id="lname" placeholder="Achternaam" name="lname"><br><br>
+            <input type="text" id="fname" placeholder="First name" name="fname"><br><br>
+            <input type="text" id="bname" placeholder="" name="bname"><br><br>
+            <input type="text" id="lname" placeholder="Last Name" name="lname"><br><br>
             <div class="block2"></div>
           </div>
         </div>
@@ -144,36 +144,36 @@
 
         </div>
         <div class="huisnummer">
-          <h4 id="huisnbm">Huisnummer</h4>
+          <h4 id="huisnbm">House number</h4>
          <div class="flexhuisNbm">
           <div class="block3"></div>
           <input type="text" id="huisnummer1" placeholder="Nr." name="huisnummer"><br><br>
-          <input type="text" id="huisnummer1" placeholder="Toev." name="huisnummer"><br><br>
+          <input type="text" id="huisnummer1" placeholder="extra" name="huisnummer"><br><br>
           <div class="block4"></div>
         </div>
 </div>
 <div class="land">
-  <h4 id="h4land">Land</h4>
+  <h4 id="h4land">Country</h4>
   <div class="dropdown">
   <select name="landen" id="landen">
-    <option value="nederland">Nederland</option>
-    <option value="belgie">Belgie</option>
-    <option value="duitsland">Duitsland</option>
+    <option value="nederland">Netherlands</option>
+    <option value="belgie">Belgium</option>
+    <option value="duitsland">Germany</option>
     <option value="luxemburg">Luxemburg</option>
   </select>
 
 </div>
 </div>
 <div class="afleveren">
-  <h4 id="aflever">Afleveradres </h4>
+  <h4 id="aflever">Delivery Adres </h4>
   <div>
-    <input type="radio" id="radselect4" name="drone1" value="leveradres" checked /><label
-      for="radselect">Op bovenstaande adres bezorgen</label>
+    <input type="radio" id="radselect4" name="drone1" value="Adres" checked /><label
+      for="radselect">Deliver on adres above</label>
 
   </div>
   <div>
     <input type="radio" id="radselect4" name="drone1" value="Zakelijk" checked /><label
-      for="radselect1">Op ander adres bezorgen</label>
+      for="radselect1">Deliver on other adres </label>
 
   </div>
 </div>
@@ -185,30 +185,30 @@
   <div class="block6"></div>
 </div>
 <div class="telefoonnummer">
-  <h4 id="telefoon">Telefoon</h4>
+  <h4 id="telefoon">Phone number</h4>
   <div class="block7"></div>
-  <input type="text" id="telefoonN" placeholder="Telefoonnummer" name="telefoonnummer"><br><br>
+  <input type="text" id="telefoonN" placeholder="Phone number" name="telefoonnummer"><br><br>
   
   <div class="block8"></div>
 </div>
 <div class="geboortedatum">
-  <h4 id="geboorte">Geboorte</h4>
+  <h4 id="geboorte">Date of birth</h4>
   <div class="block9"></div>
-  <input type="text" id="geboortenD" placeholder="dd-mm-jj" name="geboortedatum"><br><br>
+  <input type="text" id="geboortenD" placeholder="dd-mm-yy" name="geboortedatum"><br><br>
   
   <div class="block10"></div>
 </div>
 <div class="gegevensBewaren">
-<h2 class="bewaarG">BEWAAR JE GEGEVENS.</h2>
-<h2 class="bewaarG">Handig voor de volgende keer.</h2>
+<h2 class="bewaarG">Keep your info</h2>
+<h2 class="bewaarG">Better for next time</h2>
 </div>
 <div class="wachtwoord">
-  <h4 id="wachtwoordT">Wachtwoord</h4>
-  <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Min. 8 karakters"><br><br>
+  <h4 id="wachtwoordT">Password</h4>
+  <input type="password" id="pwd" name="pwd" minlength="8" placeholder="Min. 8"><br><br>
 </div>
 <div class="wachtwoordB">
-  <h4 id="wachtwoordT2">Wachtwoord Bevestigen</h4>
-  <input type="password" id="pwd1" name="pwd" minlength="8" placeholder="Min. 8 karakters"><br><br>
+  <h4 id="wachtwoordT2">Password confirm</h4>
+  <input type="password" id="pwd1" name="pwd" minlength="8" placeholder="Min. 8 "><br><br>
 </div>
 </form>
 <button type="button" class="buttonSend">Send</button>

@@ -34,7 +34,7 @@
             </div>
             <div class="price"><?php echo $product["originalPrice"];?></div>
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
-            <button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button>
+            <a href="./winkelwagen.php"><button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button></a>
         </div>
 
 </div>

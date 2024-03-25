@@ -1,3 +1,4 @@
+<?php```php
 <?php
     $config = [
         "products" => [
@@ -10,7 +11,7 @@
                 "litImg3" => "./assets/img/roze3.jpg",
                 "originalPrice" => "€ 2.550,00",
                 "discountedPrice" => "€ 1.999,00",
-                "text"=> "Voeg een vleugje kleur en comfort toe aan je ruimte met onze Ragnar Goossens. Vervaardigd met pluche fluwelen bekleding, biedt het eigentijdse stijl en duurzaamheid. Perfect om te ontspannen of te entertainen, deze bank is het toonbeeld van elegantie en charme."
+                "text"=> "Add a touch of color and comfort to your space with our Ragnar Goossens. Crafted with plush velvet upholstery, it offers contemporary style and durability. Perfect for lounging or entertaining, this sofa is the epitome of elegance and charm."
             ],
             [
                 "id" => "111292df-6491-48bd-8779-56efdee86f1d",
@@ -18,7 +19,7 @@
                 "image" => "./assets/img/bank2.jpg",
                 "originalPrice" => "€ 1.300,00",
                 "discountedPrice" => "€ 973,00",
-                "text"=> "Geef je ruimte een vleugje diepte en stijl met onze Saint Laurent. Gemaakt met weelderige fluwelen bekleding, biedt het tijdloze elegantie en duurzaamheid. Ideaal voor ontspanning of entertainment, deze bank straalt een rustige luxe uit en voegt een vleugje verfijning toe aan elke kamer."
+                "text"=> "Give your space a touch of depth and style with our Saint Laurent. Made with lush velvet upholstery, it offers timeless elegance and durability. Ideal for relaxation or entertainment, this sofa exudes a serene luxury and adds a touch of refinement to any room."
             ],
             [
                 "id" => "b9dec847-516e-4bf5-b462-6eddded84fcf",
@@ -26,7 +27,7 @@
                 "image" => "./assets/img/bank3.jpg",
                 "originalPrice" => "€ 3.500,00",
                 "discountedPrice" => "€ 3.317,00",
-                "text"=> "Transformeer je ruimte met onze Grace bankje. Met zijn strakke design en zachte bekleding van hoogwaardig materiaal, biedt dit bankje een perfecte mix van comfort en stijl. Of het nu gebruikt wordt als zitplaats in de hal, als extra zitplek aan de eettafel, of als accent in de slaapkamer, dit bankje voegt een vleugje ingetogen elegantie toe aan elke ruimte. Met het Grijze Sereniteit Bankje breng je rust en verfijning in huis."
+                "text"=> "Transform your space with our Grace bench. With its sleek design and soft upholstery of high-quality material, this bench offers a perfect blend of comfort and style. Whether used as seating in the hallway, extra seating at the dining table, or an accent in the bedroom, this bench adds a touch of understated elegance to any space. With the Gray Serenity Bench, bring tranquility and refinement into your home."
             ],
             [
                 "id" => "5e4537aa-2dd6-4b74-a010-41548df81ac2",
@@ -34,7 +35,7 @@
                 "image" => "./assets/img/bank4.jpg",
                 "originalPrice" => "€ 1.000,00",
                 "discountedPrice" => "€ 806,00",
-                "text"=> "Voeg een vleugje diepte en verfijning toe aan je interieur met onze Candy Zitmaxx. Met zijn tijdloze ontwerp en luxueuze bekleding van hoogwaardig materiaal biedt deze bank het perfecte huwelijk tussen comfort en elegantie. Of het nu in de woonkamer, studeerkamer of slaapkamer staat, dit bankstel straalt een rustige, ingetogen schoonheid uit en vormt het middelpunt van ontspanning en gezelligheid."
+                "text"=> "Add a touch of depth and refinement to your interior with our Candy Zitmaxx. With its timeless design and luxurious upholstery of high-quality material, this sofa offers the perfect marriage of comfort and elegance. Whether it's in the living room, study, or bedroom, this sofa exudes a calm, understated beauty and serves as the focal point of relaxation and coziness."
             ],
             [
                 "id" => "f728facf-4c01-4d72-88c4-0b7c7303df2d",
@@ -42,7 +43,7 @@
                 "image" => "./assets/img/bank5.jpg",
                 "originalPrice" => "€ 4.250,00",
                 "discountedPrice" => "€ 3.990,00",
-                "text"=> "Breng een stralend vleugje levendigheid in je leefruimte met onze Orchid Prominent    . Met zijn opvallende kleur en comfortabele bekleding nodigt deze zithoek uit tot ontspanning en gezelligheid. Of het nu in de woonkamer, serre of studeerkamer staat, dit meubelstuk voegt een speelse en energieke sfeer toe aan elke ruimte. Geniet van het comfort en de vreugde die de Orchid Prominent met zich meebrengt, en laat je interieur stralen als de zon."
+                "text"=> "Bring a radiant touch of vibrancy into your living space with our Orchid Prominent. With its striking color and comfortable upholstery, this seating area invites relaxation and conviviality. Whether it's in the living room, conservatory, or study, this piece of furniture adds a playful and energetic atmosphere to any space. Enjoy the comfort and joy that the Orchid Prominent brings, and let your interior shine like the sun."
             ],
             [
                 "id" => "04726c69-dc27-490c-b8e5-5f3e819cd884",
@@ -50,7 +51,7 @@
                 "image" => "./assets/img/bank6.jpg",
                 "originalPrice" => "€ 1.999,99",
                 "discountedPrice" => "€ 1.799,99",
-                "text"=> "Breng warmte en energie in je leefruimte met onze Raganar Goossens O. Met zijn levendige kleur en comfortabele bekleding nodigt deze zithoek uit tot ontspanning en gezelligheid. Of het nu in de woonkamer, serre of studeerkamer staat, dit meubelstuk voegt een speelse en dynamische sfeer toe aan elke ruimte. Geniet van het comfort en de levendigheid die de Raganar Goossens O met zich meebrengt, en laat je interieur stralen als een warme zonsondergang."
+                "text"=> "Bring warmth and energy into your living space with our Raganar Goossens O. With its vibrant color and comfortable upholstery, this seating area invites relaxation and conviviality. Whether it's in the living room, conservatory, or study, this piece of furniture adds a playful and dynamic atmosphere to any space. Enjoy the comfort and liveliness that the Raganar Goossens O brings, and let your interior shine like a warm sunset."
             ],
             [
                 "id" => "e4e1a04d-f0ae-45d6-83fa-5ac96d0e708c",
@@ -58,7 +59,7 @@
                 "image" => "./assets/img/bank7.jpg",
                 "originalPrice" => "€ 2.250,00",
                 "discountedPrice" => "€ 1.988,00",
-                "text"=> "Voeg een vleugje ingetogen elegantie toe aan je leefruimte met de U-Bank Lisette. Met zijn verfijnde combinatie van beige en grijs biedt deze bank een tijdloze esthetiek die perfect past bij elk interieur. De comfortabele bekleding en ruime zitplaatsen nodigen uit tot ontspanning en gezelligheid, waardoor het een ideale keuze is voor de woonkamer of lounge. Ervaar het ultieme comfort en de klassieke stijl van de U-Bank Lisette, en geef je huis een vleugje verfijning."
+                "text"=> "Add a touch of understated elegance to your living space with the U-Bank Lisette. With its refined combination of beige and gray, this sofa offers a timeless aesthetic that perfectly complements any interior. The comfortable upholstery and spacious seating invite relaxation and conviviality, making it an ideal choice for the living room or lounge. Experience the ultimate comfort and classic style of the U-Bank Lisette, and give your home a touch of refinement."
             ],
             [
                 "id" => "c5170fd7-4d3c-4871-b393-2bd7d3af3ebc",
@@ -67,7 +68,8 @@
                 "link" => "https://www.zitmaxx.nl/banken/lounge-bank-trentino-862163?utm_campaign=&utm_content=&utm_source=google&utm_medium=organic-shopping&utm_term=&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcYCQYsIJhzpqA33UNJht8tW1T7oFKPmbaABCrwWu3AopS-u-Gb3HUaAk7rEALw_wcB",
                 "originalPrice" => "€ 1.742,00",
                 "discountedPrice" => "€ 1.422,00",
-                "text"=> "Geef je leefruimte een moderne uitstraling met de Lounge Trentino. Met zijn stijlvolle grijze tint en eigentijds ontwerp voegt deze bank een vleugje verfijning toe aan elke kamer. De comfortabele zitting nodigt uit tot ontspanning en gezelligheid, waardoor het de perfecte keuze is voor een lounge of entertainmentruimte. Ervaar het comfort en de elegantie van de Lounge Trentino en creëer een stijlvolle en comfortabele omgeving voor ontspanning en sociale bijeenkomsten."
+                "text"=> "Give your living space a modern look with the Lounge Trentino. With its stylish gray hue and contemporary design, this sofa adds a touch of sophistication to any room. The comfortable seating invites relaxation and conviviality, making it the perfect choice for a lounge or entertainment area. Experience the comfort and elegance of the Lounge Trentino and create a stylish and comfortable environment for relaxation and social gatherings."
+           
             ],
             [
                 "id" => "cf0f0be2-6c80-44c7-8725-d1c43c37cf7e",

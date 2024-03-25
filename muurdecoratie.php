@@ -8,20 +8,9 @@ include_once("./assets/core/filters.php")
   <nav>
     <div class="topbarGrid">
       <div class="nameArticle">Muurdecoratie</div>
-      <div class="selectName">
-
+        <div class="selectName">
       </div>
-
-
-
     </div>
-
-
-
-
-
-
-
   </nav>
   <!-- alle producten -->
   <div class="article">
@@ -141,13 +130,6 @@ include_once("./assets/core/filters.php")
       <div class="prijs2">€ 19,95</div>
       <button class="btn"><i class="fa fa-heart" aria-hidden="true" style="color: rgb(0, 140, 255);"></i></button>
     </div>
-
-
-
-
-
-
-
   </div>
   <!-- de hele footer -->
   <?php include_once("./assets/core/footer.php");

@@ -41,15 +41,15 @@
             <h1>DecorMasters.nl</h1>
           </div>
           <div class="accountContainer">
-            <a href="/pages/account/mijnaccount.html" class="accountBtn">Mijn Account</a>
+            <a href="/pages/account/mijnaccount.html" class="accountBtn">My Account</a>
             <hr class="hr">
-            <a href="/pages/afrekenen.html" class="accountBtn">Afrekenen</a>
+            <a href="./afrekenen.php" class="accountBtn">Check out</a>
             <hr class="hr">
             <a href="/pages/inloggen.html" class="accountBtn">Inloggen</a>
           </div>
           <div class="log-in">
             <a href="/pages/account/mijnaccount.html"><i class="fa fa-user" ></i></a>
-            <a href="/pages/afrekenen.html"><i class="fa fa-file-text"></i></a>
+            <a href="/module2/afrekenen.php"><i class="fa fa-file-text"></i></a>
             <a href="/pages/inloggen.html"><i class="fa fa-sign-in" ></i></a></div>
           </div>
 
@@ -59,11 +59,11 @@
         </div>
         <div class="navigator">
           <a href="./home.php" class="home">Home</a>
-          <a href="./muurdecoratie.php" class="muurdecoratie">Muurdecoratie</a>
-          <a href="./doosjes.php" class="doosjes">Tafels</a>
-          <a href="./opbergers.php" class="opbergers">Opbergers</a>
-          <a href="./stoelen.php" class="stools">Stoelen</a>
-          <a href="./banken.php" class="gadgets">Banken</a>
+          <a href="./muurdecoratie.php" class="muurdecoratie">Wall Decoration</a>
+          <a href="./doosjes.php" class="doosjes">Tabels</a>
+          <a href="./opbergers.php" class="opbergers">Closet</a>
+          <a href="./stoelen.php" class="stools">Chair</a>
+          <a href="./banken.php" class="gadgets">Couches</a>
         </div>
         <div class="search-container">
           <form id="search-form">
