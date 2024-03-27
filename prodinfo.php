@@ -34,7 +34,8 @@
             </div>
             <div class="price"><?php echo $product["originalPrice"];?></div>
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
-            <a href="./winkelwagen.php"><button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button></a>
+            <form  action="" method="post"> <input type="number" class="count" name="aantal" value="1" min=1></form>
+            <a href="./winkelwagen.php?add=<?php echo $curr_product["id"] ?>"><button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button></a>
         </div>
 
 </div>

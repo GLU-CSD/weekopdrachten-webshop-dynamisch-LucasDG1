@@ -59,11 +59,11 @@
         </div>
         <div class="navigator">
           <a href="./home.php" class="home">Home</a>
-          <a href="./muurdecoratie.php" class="muurdecoratie">Wall Decoration</a>
+          <a href="./banken.php" class="muurdecoratie">Couches</a>
           <a href="./doosjes.php" class="doosjes">Tabels</a>
           <a href="./opbergers.php" class="opbergers">Closet</a>
           <a href="./stoelen.php" class="stools">Chair</a>
-          <a href="./banken.php" class="gadgets">Couches</a>
+          <a href="./muurdecoratie.php" class="gadgets">Wall Decoration</a>
         </div>
         <div class="search-container">
           <form id="search-form">

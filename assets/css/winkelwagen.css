@@ -45,7 +45,50 @@ body{
     font-size: 25px;
     margin-top: 4px;
 }
-
+.overzicht{
+    font-size: 29px;
+    margin-left: 35px;
+    margin-top: 50px;
+    font-weight: 700;
+}
+.betaalingsmethodes-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.betalen{
+    border: solid;
+    width: 100px;
+    height: 80px;
+    border-radius: 20px;
+}
+.button {
+    
+    width: 350px;
+    height: 80px;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 30px;
+    
+    
+    color: #fff;
+    background-color: #00ff08; /* Coral */
+    border: 2px solid #08f300; /* Coral */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 35px;
+    margin-top: 50px;
+  }
+  
+  .button:hover {
+    background-color: #00cd25; /* Orange Red */
+    border-color: #00a70b; /* Orange Red */
+  }
+  
+  .button:active {
+    transform: translateY(2px);
+  }
 
 
 
