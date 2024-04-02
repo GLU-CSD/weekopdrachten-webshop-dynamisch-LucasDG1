@@ -26,11 +26,9 @@
     <div class="info">
         <div class="overzicht">Betalings Methode</div>
         <div class="betaalingsmethodes-flex">
-            <div class="betalen">Ideal</div>
-            <div class="betalen">Paypal</div>
-            <div class="betalen">Mastercard</div>
-            <div class="betalen">Visa</div>
-            <div class="betalen">American Exspress</div>
+            <i class="fa fa-paypal" aria-hidden="true" style="font-size: 60px; cursor: pointer;"></i>
+            <i class="fa fa-cc-mastercard" aria-hidden="true"style="font-size: 60px; cursor: pointer;" ></i> 
+            <i class="fa fa-cc-visa" aria-hidden="true" style="font-size: 60px; cursor: pointer;"></i>
         </div>
         <button class="button">Order</button>
     </div>

@@ -55,12 +55,16 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+    width: 300px;
+    margin-left: 35px;
 }
-.betalen{
+.betalen1{
     border: solid;
     width: 100px;
     height: 80px;
     border-radius: 20px;
+    
 }
 .button {
     
@@ -89,8 +93,6 @@ body{
   .button:active {
     transform: translateY(2px);
   }
-
-
 
 
 
