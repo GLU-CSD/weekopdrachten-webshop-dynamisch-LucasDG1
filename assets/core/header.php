@@ -43,7 +43,7 @@
           <div class="accountContainer">
             <a href="/pages/account/mijnaccount.html" class="accountBtn">My Account</a>
             <hr class="hr">
-            <a href="./afrekenen.php" class="accountBtn">Check out</a>
+            <a href="./winkelwagen.php" class="accountBtn">Check out</a>
             <hr class="hr">
             <a href="/pages/inloggen.html" class="accountBtn">Inloggen</a>
           </div>

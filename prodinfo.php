@@ -1,6 +1,8 @@
 <?php 
 session_start();
-print_r($_SESSION);
+if (isset($_POST['bestel'])) {
+    $_SESSION['cart'][$_POST['id']] = $_POST['aantal'];
+   }
 ?>
 
 
@@ -45,11 +47,16 @@ print_r($_SESSION);
             </div>
             <div class="price"><?php echo $product["originalPrice"];?></div>
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
-            <form  action="./winkelwagen.php" method="post"><input name="article" type="hidden" value="<?php echo $curr_product["id"] ?>"> <input type="number" class="count" name="aantal" value="1" min=1 >
+            <form action="prodinfo.php?id=<?= $product['id']; ?>&add=true" method="post">
+                <input type="hidden" name="id" value="<?= $product['id']; ?>">
+                <input type="submit" name="bestel" value="Add To Shoppingcart" class="ShoppingcartAdd">
+                <input type="number" name="aantal" class="count" value="1" min=1>
+              </form>
+            <!-- <form  action="./winkelwagen.php" method="post"><input name="article" type="hidden" value="<?php echo $curr_product["id"] ?>"> <input type="number" class="count" name="aantal" value="1" min=1 >
             <input type="submit" value="In winkelwagen">
-            </form>
-
-            <!-- <a href="./winkelwagen.php?add=<?php echo $curr_product["id"] ?>"><button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button></a> -->
+            </form> -->
+           
+           
         </div>
 
 </div>

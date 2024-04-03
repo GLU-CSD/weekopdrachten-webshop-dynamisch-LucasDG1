@@ -1,5 +1,5 @@
-<?php```php
 <?php
+
     $config = [
         "products" => [
             [
