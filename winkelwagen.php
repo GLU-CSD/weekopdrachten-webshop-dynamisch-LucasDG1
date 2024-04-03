@@ -1,5 +1,8 @@
 <?php
     session_start();
+    $article = $_POST['article'];
+    $aantal = $_POST['aantal'];
+    $_SESSION['winkelwagen'][$article] = $aantal;
 ?>
 
 <!DOCTYPE html>

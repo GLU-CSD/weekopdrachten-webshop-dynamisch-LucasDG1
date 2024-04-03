@@ -1,3 +1,14 @@
+<?php 
+session_start();
+print_r($_SESSION);
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +45,11 @@
             </div>
             <div class="price"><?php echo $product["originalPrice"];?></div>
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
-            <form  action="" method="post"> <input type="number" class="count" name="aantal" value="1" min=1></form>
-            <a href="./winkelwagen.php?add=<?php echo $curr_product["id"] ?>"><button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button></a>
+            <form  action="./winkelwagen.php" method="post"><input name="article" type="hidden" value="<?php echo $curr_product["id"] ?>"> <input type="number" class="count" name="aantal" value="1" min=1 >
+            <input type="submit" value="In winkelwagen">
+            </form>
+
+            <!-- <a href="./winkelwagen.php?add=<?php echo $curr_product["id"] ?>"><button class="button"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 27px "></i>In Winkelwagen</button></a> -->
         </div>
 
 </div>
