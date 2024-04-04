@@ -17,26 +17,8 @@
 <body>
 <?php include_once("./assets/core/header.php");?>
 
-<div class="winkelwagen-flex">
-    <div class="winkelwagen">
-        <?php        
-           if (isset($_SESSION['cart'])) { 
-
-            foreach ($_SESSION['cart'] as $productid => $quantity) {
-                // echo 'id: ' . $productid . ' - aantal: ' . $_SESSION['cart'][$productid] . "<br>";
-
-                foreach ($config as $product) {
-                    if ($product["id"] == $products) {
-        ?>
-        <div class="winkelwagen-flex">
-            <div class="img"></div>
-            <div class="winkel-box">
-            <div class="title"><?php echo $product["name"];?></div>
-                <div class="price"><?php echo $product["originalPrice"];?></div>
-            <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
-            </div>
-        </div>
-    </div>
+        <!-- <div class="winkelwagen-flex">
+            <div class="winkelwagen"> -->
     <div class="info">
         <div class="overzicht">Betalings Methode</div>
         <div class="betaalingsmethodes-flex">
@@ -44,7 +26,27 @@
             <i class="fa fa-cc-mastercard" aria-hidden="true"style="font-size: 60px; cursor: pointer;" ></i> 
             <i class="fa fa-cc-visa" aria-hidden="true" style="font-size: 60px; cursor: pointer;"></i>
         </div>
-        <button class="button">Order</button>
+        <a href="./afrekenen.php"><button class="button">Order</button></a>
+        <?php        
+           if (isset($_SESSION['cart'])) { 
+
+            foreach ($_SESSION['cart'] as $productid => $quantity) {
+                // echo 'id: ' . $productid . ' - aantal: ' . $_SESSION['cart'][$productid] . "<br>";
+
+                foreach ($config['products'] as $product) {
+                    if ($product['id'] == $productid) {
+        ?>
+        <div class="winkelwagen-flex">
+        <div class="img"><img src="<?php echo $product["image"];?>" alt="" height="160" width="160"></div>
+            <div class="winkel-box">
+            <div class="title"><?php echo $product["name"];?></div>
+                <div class="price"><?php echo $product["originalPrice"];?></div>
+            <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
+            <div class="amount">Hoeveelheid:<?=$_SESSION['cart'][$productid]?> </div>
+            </div>
+        </div>
+    </div>
+    
      <?php      }
             }
         }
@@ -53,6 +55,8 @@
     </div>
                     
 </div>
-
+<?php 
+    include_once("./assets/core/footer.php")
+?>
 </body>
 </html>

@@ -211,7 +211,7 @@
   <input type="password" id="pwd1" name="pwd" minlength="8" placeholder="Min. 8 "><br><br>
 </div>
 </form>
-<button type="button" class="buttonSend">Send</button>
+<a href="./dankuwel.php"><button type="button" class="buttonSend">Send</button></a>
 
         
 

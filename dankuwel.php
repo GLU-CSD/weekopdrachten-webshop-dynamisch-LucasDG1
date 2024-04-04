@@ -1,102 +1,56 @@
-<!doctype html>
-<html class="no-js" lang="">
+<?php 
+include_once("./assets/core/header.php")
+?>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Copyright</title>
-    <link rel="stylesheet" href="/eindopdrachten-webshop-overzicht-bestelformulier-LucasDG1/assets/css/copyright.css">
-    <meta name="description" content="">
-
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:alt" content="">
-
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
-
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#fafafa">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="/assets/js/app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/dankjuwel.css">
+    <title>Document</title>
 </head>
-
 <body>
-
-    <main>
-
-        <header>
-            <!-- de topbar -->
-            <div class="topbar">
-                <div>
-                    <label for="languages">Uw Taal</label>
-                    <select name="languages" id="languages">
-                        <option value="nederlands">Nederlands</option>
-                        <option value="engels">Engels</option>
-                    </select>
-                </div>
-                <div id="name">
-                    <h1>DecorMasters.nl</h1>
-                </div>
-<!-- Btns rechtsboven -->
-                <div class="accountContainer">
-                    <a href="/pages/account/mijnaccount.html" class="accountBtn">Mijn Account</a>
-                    <hr class="hr">
-                    <a href="/pages/afrekenen.html" class="accountBtn">Afrekenen</a>
-                    <hr class="hr">
-                    <a href="/pages/inloggen.html" class="accountBtn">Inloggen</a>
-
-                </div>
-
-            </div>
-
-            <div class="underbar">
-
-                <div class="logo">
-                    <div class="hydralogo"><img src="/assets/img/Hydra.jpg" alt="Logo" width="60" height="60">
-                    </div>
-                </div>
-
-                <div class="navigator">
-                    <a href="/pages/home.html" class="home">Home</a>
-                    <a href="/pages/muurdecoratie.html" class="muurdecoratie">Muurdecoratie</a>
-                    <a href="/pages/doosjes.html" class="doosjes">Tafels</a>
-                    <a href="/pages/opbergers.html" class="opbergers">Opbergers</a>
-                    <a href="/pages/stoelen.html" class="stools">Stoelen</a>
-                    <a href="/pages/banken.html" class="gadgets">Banken</a>
-                </div>
-
-                <div class="opzoeken">
-                    <button class="searchBtn"></button>
-                    <button class="searchBtn"></button>
-                    <button class="searchBtn" id="shoppingcart"></button>
+    <div class="container-flex">
+    <div class="container">
+        <div class="title">Dankuwel voor het bestellen!</div>
+        <div class="under">De banken worden u kant opgestuurd!</div>
+        <div class="tijd">Uw bestelling is er over:</div>
+        <p id="demo"></p>
+        <a href="./banken.php"><button class="btn1">Verder Shoppen</button>
 
 
-
-
-                </div>
-
-            </div>
-
-
-        </header>
-        <div>
-            <!-- copyright text -->
-            <div class="copyrightText">
-                <div class="inhoud">Dankuwel voor het invullen! </div>
-            </div>
         </div>
+    </div>
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
 
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-
-
-
-    </main>
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 </body>
-
 </html>

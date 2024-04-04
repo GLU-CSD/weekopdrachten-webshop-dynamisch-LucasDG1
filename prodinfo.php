@@ -49,7 +49,7 @@ if (isset($_POST['bestel'])) {
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
             <form action="prodinfo.php?id=<?= $product['id']; ?>&add=true" method="post">
                 <input type="hidden" name="id" value="<?= $product['id']; ?>">
-                <input type="submit" name="bestel" value="Add To Shoppingcart" class="ShoppingcartAdd">
+                <a href="./winkelwagen.php"><input type="submit" name="bestel" value="Add To Shoppingcart" class="ShoppingcartAdd"></a>
                 <input type="number" name="aantal" class="count" value="1" min=1>
               </form>
             <!-- <form  action="./winkelwagen.php" method="post"><input name="article" type="hidden" value="<?php echo $curr_product["id"] ?>"> <input type="number" class="count" name="aantal" value="1" min=1 >
