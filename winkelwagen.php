@@ -40,7 +40,7 @@
         <div class="img"><img src="<?php echo $product["image"];?>" alt="" height="160" width="160"></div>
             <div class="winkel-box">
             <div class="title"><?php echo $product["name"];?></div>
-                <div class="price"><?php echo $product["originalPrice"];?></div>
+                <!-- <div class="price"><?php echo $product["originalPrice"];?></div> -->
             <div class="disPrice"><?php echo $product["discountedPrice"];?></div>
             <div class="amount">Hoeveelheid:<?=$_SESSION['cart'][$productid]?> </div>
             </div>

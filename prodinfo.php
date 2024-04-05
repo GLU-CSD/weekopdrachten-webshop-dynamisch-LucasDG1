@@ -4,13 +4,6 @@ if (isset($_POST['bestel'])) {
     $_SESSION['cart'][$_POST['id']] = $_POST['aantal'];
    }
 ?>
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
