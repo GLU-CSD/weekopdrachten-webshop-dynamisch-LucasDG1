@@ -92,7 +92,7 @@
         <h3>Your info</h3>
         <h4></h4>
         <h4 id="TyBe">Type of Order:</h4>
-        <form name="myForm" action="/assest/pages/home.html" onsubmit="return validateForm()" method="post" required>
+        <form name="myForm" action="./dankuwel.php" onsubmit="return validateForm()" method="post" required>
         <div>
           <input type="radio" id="radselect" name="drone" value="particulier" checked /><label
             for="radselect">Private</label>
@@ -167,12 +167,12 @@
 <div class="afleveren">
   <h4 id="aflever">Delivery Adres </h4>
   <div>
-    <input type="radio" id="radselect4" name="drone1" value="Adres" checked /><label
+    <input type="radio" id="radselect4" name="drone45" value="Adres" checked /><label
       for="radselect">Deliver on adres above</label>
 
   </div>
   <div>
-    <input type="radio" id="radselect4" name="drone1" value="Zakelijk" checked /><label
+    <input type="radio" id="radselect4" name="drone45" value="Zakelijk" checked /><label
       for="radselect1">Deliver on other adres </label>
 
   </div>
@@ -210,8 +210,11 @@
   <h4 id="wachtwoordT2">Password confirm</h4>
   <input type="password" id="pwd1" name="pwd" minlength="8" placeholder="Min. 8 "><br><br>
 </div>
+<input type="submit" value="Send" >
 </form>
-<a href="./dankuwel.php"><button type="button" class="buttonSend">Send</button></a>
+
+
+<!-- <a href="./dankuwel.php"><button type="button" class="buttonSend">Send</button></a> -->
 
         
 
@@ -229,6 +232,7 @@ function validateForm() {
   var bname = document.getElementById("bname").value;
   var lname = document.getElementById("lname").value;
   var postcode = document.getElementById("postcode1").value;
+  var gender = document.getElementById("radselect1").value;
   var huisnummer = document.getElementById("huisnummer1").value;
   var email = document.getElementById("email").value;
   var telefoon = document.getElementById("telefoonN").value;
@@ -236,7 +240,7 @@ function validateForm() {
   var pwd = document.getElementById("pwd").value;
   var pwd1 = document.getElementById("pwd1").value;
 
-  if (fname == "" || bname == "" || lname == "" || postcode == "" || huisnummer == "" || email == "" || telefoon == "" || geboortedatum == "" || pwd == "" || pwd1 == "") {
+  if (fname == "" || bname == "" || lname == "" || postcode == "" || huisnummer == "" || email == "" || telefoon == "" || geboortedatum == "" || pwd == "" || pwd1 == "" || gender == "") {
     alert("All fields must be filled out");
     return false;
   } else {
